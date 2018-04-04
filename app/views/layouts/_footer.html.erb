@@ -1,0 +1,25 @@
+<div class="container-fluid" id="footer">
+  <div class="row">
+<hr>
+    <div class="wrapper">
+      <div class="btn" style="margin-left: 2px; padding-left: 0px; float: left;">
+        <%= link_to "<span class=\"glyphicon glyphicon-home\"></span>".html_safe, root_path, 
+          :type => "button", :class => "btn btn-primary btn-xs" %>
+        <%= link_to "About", about_path, :type => "button", :class => "btn btn-primary btn-xs" %> 
+        <%= link_to "Help", help_path, :type => "button", :class => "btn btn-primary btn-xs" %>
+        <%= link_to "Sitemap", sitemap_path, :type => "button", :class => "btn btn-primary btn-xs" %>
+        <%= link_to "Staff", staff_path, :type => "button", :class => "btn btn-primary btn-xs" %>
+        <%= link_to "Members", members_path, :type => "button", :class => "btn btn-primary btn-xs" %></li>
+        <%= link_to "Links", links_path, :type => "button", :class => "btn btn-primary btn-xs" %>
+        <%= link_to "<span class=\"glyphicon glyphicon-envelope\"></span>".html_safe,contact_path, 
+          :type => "button", :class => "btn btn-primary btn-xs" %>
+      </div>
+      <div class="navbar-brand">
+        <%= link_to "Best Songs", root_path, :style => "padding-right: 10px;" %>
+        <%= link_to image_tag("logotopsongW.jpg", alt: "Golden Record"), root_path %>
+      </div>
+    </div>
+<hr>
+    <p>Ivan Dolac, 2018</p>  
+  </div> <!-- row --> 
+</div> <!-- container-fluid footer -->
