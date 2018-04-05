@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  performer: MyString
+  cluster: MyString
+  address: MyString
+  duration: 1
+  evaluation: 9.99
+
+two:
+  title: MyString
+  performer: MyString
+  cluster: MyString
+  address: MyString
+  duration: 1
+  evaluation: 9.99

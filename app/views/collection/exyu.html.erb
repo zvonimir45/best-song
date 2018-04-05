@@ -1,0 +1,22 @@
+<% provide(:title, "Ex Yu") %>
+<div class="container-fluid" id="main">
+  <div class="row">
+    <div class="col-md-7">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="//youtube.com/embed/LKRaXPYSzKY?&rel=0" allowfullscreen name="iframe_a"></iframe>
+      </div>
+    </div>
+    <ul class="the-buttons" style="padding-left: 0px;">
+      <% play_all = [] %>
+      <% @exyu_songs.each do |song| %>
+        <% play_all << song.address %>
+      <% end %>
+      <li><a class="btn btn-warning btn-xs" href="//youtube.com/embed/LKRaXPYSzKY?autoplay=1&loop=1&playlist=<%= play_all.join(",") %>"
+        target="iframe_a" title="Play all song in sequence, one after another">Play all</a></li>
+      <% @exyu_songs.each do |song| %>
+        <li><a class="btn btn-primary btn-xs" href="//youtube.com/embed/<%= song.address %>?autoplay=1&rel=0" target="iframe_a" 
+          title="<%= song.title %> - <%= song.performer %>"><%= song.title %></a></li>
+      <% end %>
+    </ul>
+  </div>
+</div>

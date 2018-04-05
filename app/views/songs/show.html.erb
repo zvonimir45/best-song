@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @song.title %>
+</p>
+
+<p>
+  <strong>Performer:</strong>
+  <%= @song.performer %>
+</p>
+
+<p>
+  <strong>Cluster:</strong>
+  <%= @song.cluster %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @song.address %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @song.duration %>
+</p>
+
+<p>
+  <strong>Evaluation:</strong>
+  <%= @song.evaluation %>
+</p>
+
+<%= link_to 'Edit', edit_song_path(@song) %> |
+<%= link_to 'Back', songs_path %>

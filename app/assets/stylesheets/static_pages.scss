@@ -299,12 +299,10 @@ div.col-md-7 {
   }
 }
 
-/* Lyrics */
-
-h2 {
-  margin: 10px 0 15px 15px;
-  color: #90CAF9;  
+h2, th, td, ol li {
+  color: #FFF;
 }
+
 
 /* Static pages */
 
@@ -344,44 +342,3 @@ div#goto ul {
   }
 }
 
-/* Lyrics */
-
-table.table.table-bordered tr th {
-  color: #BBDEFB;
-}
-
-div.row label {
-  color: #BBDEFB;
-}
-
-table.table.table-bordered tr td {
-  color: #BBDEFB;
-  a {
-    background-color: #0D47A1;
-    color: #BBDEFB;
-    text-decoration: none;
-    &:hover {
-      color: #EDBF5F;
-    }
-  }
-}
-
-div.actions input {
-  background-color: #283593;
-  color: #BBDEFB;
-  margin: 5px  0 5px 10px;
-  font-weight: bold;
-  &:hover {
-    background-color: #283593;
-    color: #EDBF5F;
-  }
-}
-
-div.wrapper-edit {
-  margin: 10px 0 0 10px;
-}
-
-div.wrapper-show p {
-  margin: 15px 0 0 10px;
-  color: #90CAF9;  
-}

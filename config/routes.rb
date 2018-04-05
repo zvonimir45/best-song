@@ -12,4 +12,15 @@ Rails.application.routes.draw do
   get    'staff'    => 'static_pages#staff'
   get    'songs'    => 'songs#index'
 
+  resources :songs
+
+  get    'oldies'     => 'collection#oldies'
+  get    'evergreens' => 'collection#evergreens'
+  get    'moderns'     => 'collection#moderns'
+  get    'croatia'    => 'collection#croatia'
+  get    'exyu'       => 'collection#exyu'
+  get    'dance'      => 'collection#dance'
+  get    'sing'       => 'collection#sing'
+  get    'dream'      => 'collection#dream'
+
 end

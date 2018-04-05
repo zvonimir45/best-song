@@ -6,7 +6,7 @@
         <div class="navbar-brand">
           <p>
             <%= link_to image_tag("logotopsongW.jpg", alt: "Golden Record"), root_path %>
-            <spline><%= link_to "Best Songs", root_path %></spline>
+            <spline><%= link_to "Best Song", root_path %></spline>
           </p>
         </div>
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
@@ -19,16 +19,14 @@
       </div>
       <div class="collapse navbar-collapse" id="collapse-1">
         <ul class="nav navbar-nav">
-<!--          <li><%#= link_to "Oldie", oldies_path, :title => "Select and listen to a song." %></li>
-          <li><%#= link_to "Modern", modern_path, :title => "Select and listen to a song." %></li>
-          <li><%#= link_to "Evergreen", evergreens_path, :title => "Select and listen to a song." %></li>
-          <li><%#= link_to "Croatia", croatia_path, :title => "Select and listen to a song." %></li>
-          <li><%#= link_to "Ex Yu",exyu_path, :title => "Select and listen to a song." %></li>
-          <li><%#= link_to "Dance", dance_path, :title => "Select a song and dance." %></li>
-          <li><%#= link_to "Sing", sing_path, :title => "Select a song and sing." %></li>
-          <li><%#= link_to "Dream", dream_path, :title => "Select a song and fly in dreams." %></li>
-          <li><%#= link_to "Child", children_path, :title => "Select and listen to a song." %></li>
-          <li><%#= link_to "Lyrics", lyrics_path, :title => "Select song lyrics with chords." %></li> -->
+          <li><%= link_to "Oldies", oldies_path, :title => "Select and listen to a song." %></li>
+          <li><%= link_to "Moderns", moderns_path, :title => "Select and listen to a song." %></li>
+          <li><%= link_to "Evergreens", evergreens_path, :title => "Select and listen to a song." %></li>
+          <li><%= link_to "Croatia", croatia_path, :title => "Select and listen to a song." %></li>
+          <li><%= link_to "Ex Yu",exyu_path, :title => "Select and listen to a song." %></li>
+          <li><%= link_to "Dance", dance_path, :title => "Select a song and dance." %></li>
+          <li><%= link_to "Sing", sing_path, :title => "Select a song and sing." %></li>
+          <li><%= link_to "Dream", dream_path, :title => "Select a song and fly in dreams." %></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li> <%= link_to "<span class=\"glyphicon glyphicon-envelope\"></span>".html_safe,contact_path, 
