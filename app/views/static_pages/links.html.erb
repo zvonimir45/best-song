@@ -2,7 +2,7 @@
 <div class="container-fluid" id="main">
   <div class="row">
 
-  	<h2>Staff</h2>
+  	<h2>Links</h2>
     <div id="goto">
     	<ul>
         <li><%= link_to "YouTube - videos", "https://www.youtube.com/", 
@@ -47,24 +47,20 @@
 
   <div class="row">
     <div class="col-lg-3 col-sm-6 col-xs-12">
-        <img class="thumbnail img-responsive" 
-          src="assets/luis-fonsi-web.jpg" 
-            alt="Luis Fonsi" title="Luis-Fonsi-&-Daddy-Yankee">
+      <%= link_to image_tag("luis-fonsi-web.jpg", alt: "Luis Fonsi", 
+        title: "Luis-Fonsi-&-Daddy-Yankee", class: "thumbnail img-responsive"), "https://en.wikipedia.org/wiki/Luis_Fonsi" %>
     </div>
     <div class="col-lg-3 col-sm-6 col-xs-12">
-      <img class="thumbnail img-responsive" 
-        src="assets/willie-nelson-web.jpg" 
-          alt="Willie Nelson" title="Willie Nelson with Trigger">
+      <%= link_to image_tag("chuck-berry-web.jpg", alt: "Chuck Berry", 
+        title: "Chuck Berry - Father of Rock 'n' Roll", class: "thumbnail img-responsive"), "https://en.wikipedia.org/wiki/Chuck_Berry" %>
     </div>
     <div class="col-lg-3 col-sm-6 col-xs-12">
-      <img class="thumbnail img-responsive" 
-        src="assets/whitney-houston-web.jpg" 
-          alt="Whitney Houston" title="images/vinko-coce-web.jpg">
+      <%= link_to image_tag("whitney-houston-web.jpg", alt: "Whitney Houston", 
+        title: "Whitney Houston - Nippy", class: "thumbnail img-responsive"), "https://en.wikipedia.org/wiki/Whitney_Houston" %>
     </div>
     <div class="col-lg-3 col-sm-6 col-xs-12">
-      <img class="thumbnail img-responsive" 
-        src="assets/vinko-coce-web.jpg" 
-          alt="Vinko Coce" title="Vinko Coce - Trogirski Slavuj">
+      <%= link_to image_tag("klapa-rispet-web.jpg", alt: "Klapa Ri&#353;pet", 
+        title: "Klapa Ri&#353;pet i Ivo Amuli&#263;", class: "thumbnail img-responsive"), "https://www.facebook.com/klaparispet/" %>
     </div>
   </div><!-- row -->
 

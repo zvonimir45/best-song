@@ -9,11 +9,34 @@
       <p>Luka Eftimov - 2nd editor</p>
 <br />      
       <ul>
-       <li><%#= link_to "Songs", songs_path, 
+       <li><%= link_to "Songs", songs_path, 
           :type => "button", :class => "btn btn-primary btn-xs" %></li>
       </ul>
 <br />
     </div>
 
-  </div>
+  </div><!-- row -->
+
+<hr><br />
+
+  <div class="row">
+    <div class="col-lg-3 col-sm-6 col-xs-12">
+      <%= link_to image_tag("elvis-presley-web.jpg", alt: "Elvis Prisley", 
+        title: "Elvis Prisley - The King", class: "thumbnail img-responsive"), "https://en.wikipedia.org/wiki/Elvis_Presley" %>
+    </div>
+    <div class="col-lg-3 col-sm-6 col-xs-12">
+      <%= link_to image_tag("chuck-berry-web.jpg", alt: "Chuck Berry", 
+        title: "Chuck Berry - Father of Rock 'n' Roll", class: "thumbnail img-responsive"), "https://en.wikipedia.org/wiki/Chuck_Berry" %>
+    </div>
+    <div class="col-lg-3 col-sm-6 col-xs-12">
+      <%= link_to image_tag("mick-jagger-web.jpg", alt: "Mick Jagger", 
+        title: "Mick Jagger - Sir Michael Philip Jagger", class: "thumbnail img-responsive"), "https://en.wikipedia.org/wiki/Mick_Jagger" %>
+    </div>
+    <div class="col-lg-3 col-sm-6 col-xs-12">
+      <%= link_to image_tag("luis-fonsi-web.jpg", alt: "Luis Fonsi", 
+        title: "Luis-Fonsi-&-Daddy-Yankee", class: "thumbnail img-responsive"), "https://en.wikipedia.org/wiki/Luis_Fonsi" %>
+    </div>
+  </div><!-- row -->
+
+
 </div>
